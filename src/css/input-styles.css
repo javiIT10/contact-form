@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label {
+    @apply block text-[#27302F] leading-none;
+  }
+
+  .input {
+    @apply rounded-md border border-[#929C9D] w-full leading-none outline-none cursor-pointer focus:border-green-medium p-2 my-2 lg:py-[15px] px-[22px];
+  }
+
+  .error {
+    @apply text-red leading-none;
+  }
+
+  .check-active {
+    @apply bg-green-lighter border-green-medium;
+  }
+}
